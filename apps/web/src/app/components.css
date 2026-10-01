@@ -1,0 +1,41 @@
+@layer components {
+  .profile-section {
+    @apply mb-8 pb-8 border-b border-line last:border-0 last:mb-0 last:pb-0;
+  }
+
+  .profile-section h3 {
+    @apply text-sm font-bold mb-4 text-ink;
+  }
+
+  .form-grid {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  .form-grid > div {
+    @apply flex flex-col gap-2;
+  }
+
+  .form-grid label {
+    @apply text-xs font-bold text-muted uppercase tracking-wide;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 border border-line rounded-lg text-sm focus:outline-none focus:border-blue focus:ring-1 focus:ring-blue/20;
+  }
+
+  .skill-grid {
+    @apply grid gap-3;
+  }
+
+  .skill-card {
+    @apply flex items-center justify-between p-4 border border-line rounded-lg hover:bg-blue/5;
+  }
+
+  .skill-level {
+    @apply text-xs font-bold text-blue bg-blue/10 px-2 py-1 rounded inline-block ml-2;
+  }
+
+  .assessment-grid {
+    @apply grid grid-cols-3 gap-4;
+  }
+}
