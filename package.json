@@ -1,0 +1,24 @@
+{
+  "name": "campus-careeros",
+  "version": "1.0.0",
+  "description": "Campus CareerOS - A comprehensive career platform for students",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @campus-careeros/web dev & yarn workspace @campus-careeros/api dev",
+    "build": "yarn workspaces run build",
+    "start": "yarn workspace @campus-careeros/api start",
+    "lint": "yarn workspaces run lint",
+    "format": "yarn workspaces run format",
+    "db:migrate": "yarn workspace @campus-careeros/api db:migrate",
+    "db:seed": "yarn workspace @campus-careeros/api db:seed"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
